@@ -1,0 +1,50 @@
+@import "../styles/variable";
+.Navbar_container {
+  height: 15vh;
+  padding: 1rem;
+  .container {
+    margin: 0 auto;
+    width: 1200px;
+    display: grid;
+    padding: 0.5rem;
+    align-items: center;
+    grid-template-columns: 1fr 3fr 1fr 1fr;
+    .Navbar_logo {
+      width: 100%;
+      padding-left: 0.7rem;
+      .logo {
+        width: 30%;
+        cursor: pointer;
+      }
+    }
+    .Navbar_location {
+      display: flex;
+      .location {
+        .location_img {
+          background-color: $dark-blue-color;
+        }
+      }
+      .location_details {
+        text-align: center;
+        inline-size: 500px;
+      }
+    }
+    .Navbar_membership {
+      background-color: $dark-blue-color;
+      width: 20%;
+      border-radius: 50%;
+      img {
+        padding: 0.5rem;
+        cursor: pointer;
+        width: 100%;
+      }
+    }
+    .Navbar_Menu {
+      width: 20%;
+      img {
+        width: 70%;
+        cursor: pointer;
+      }
+    }
+  }
+}
