@@ -1,13 +1,13 @@
 import HeaderBody from "./HeaderBody/Headerbody";
-// import Headerfooter from "./Hearderfooter/Hearderfooter";
 import Navbar from "./navbar/Navbar";
+import Headerfooter from "./Hearderfooter/Hearderfooter";
 
 const HEADER = () => {
   return (
     <div className="Container">
       <Navbar />
       <HeaderBody />
-      {/* <Headerfooter/> */}
+      <Headerfooter />
     </div>
   );
 };

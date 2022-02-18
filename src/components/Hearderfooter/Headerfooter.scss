@@ -1,39 +1,29 @@
 @import "../styles/variable";
 
 .Main_Container {
-  height: 30vh;
+  height: 10vh;
+  background-color: white;
   .container {
     margin: 0 auto;
     width: 1000px;
     .Footergrid_container {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 6rem;
       .connect_container {
-        position: relative;
-        text-align: center;
-        // width: 60%;
-        color: $dark-blue-color;
         img {
-          width: 90%;
-        }
-        h3 {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
+          width: 20%;
         }
       }
       .create_container {
-        width: 60%;
         img {
-          width: 90%;
+          width: 20%;
         }
       }
       .learn_container {
-        width: 60%;
         img {
-          width: 90%;
+          width: 20%;
         }
       }
     }

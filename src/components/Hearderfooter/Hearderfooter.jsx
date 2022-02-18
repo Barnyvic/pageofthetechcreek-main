@@ -1,6 +1,7 @@
-import connect from "../assets/connect.jpg";
-import create from "../assets/create.jpg";
-import learn from "../assets/learn.jpg";
+import connect from "../assets/connect.svg";
+import create from "../assets/create.svg";
+import learn from "../assets/learn.svg";
+
 const Headerfooter = () => {
   return (
     <div className="Main_Container">
@@ -8,19 +9,15 @@ const Headerfooter = () => {
         <div className="Footergrid_container">
           <div className="connect_container">
             <img src={connect} alt="" />
-            <h3>connect</h3>
+            <p>connect</p>
           </div>
           <div className="create_container">
             <img src={create} alt="" />
-            <h3>connect</h3>
+            <p>connect</p>
           </div>
           <div className="learn_container">
             <img src={learn} alt="" />
-            <h3>connect</h3>
-          </div>
-          <div className="connect_container">
-            <img src={connect} alt="" />
-            <h3>connect</h3>
+            <p>connect</p>
           </div>
         </div>
       </div>

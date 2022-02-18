@@ -1,10 +1,29 @@
 @import "../styles/variable";
 
 .Headerbody_Conatiner {
-  height: 55vh;
-  background-color: $dark-blue-color;
+  height: 78vh;
+  .custom-shape-divider-bottom-1645091675 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  .custom-shape-divider-bottom-1645091675 svg {
+    position: relative;
+    display: block;
+    width: calc(163% + 1.3px);
+    height: 368px;
+  }
+
+  .custom-shape-divider-bottom-1645091675 .shape-fill {
+    fill: #0544a8;
+  }
   .container {
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
     gap: 4rem;
@@ -15,45 +34,95 @@
       flex: 1;
       width: 80%;
       img {
-        margin-top: 5rem;
-        width: 60%;
-        border-radius: 50%;
+        margin-top: 1rem;
+        width: 70%;
+        position: relative;
+        border-radius: 6px;
+        animation: movingImg;
+        animation-duration: 8s;
+        // animation-iteration-count: infinite;
+      }
+      @keyframes movingImg {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
       }
     }
     .headerBodyContent {
       flex: 1;
-      color: aliceblue;
+      color: black;
       margin-left: 3rem;
       h1 {
-        font-size: 2rem;
+        font-size: 3.5rem;
+        font-weight: 600;
+        position: relative;
+        animation: heading;
+        animation-duration: 3s;
       }
-      p {
-        inline-size: 350px;
+      @keyframes heading {
+        0% {
+          top: -600px;
+        }
+        100% {
+          top: 0px;
+        }
+      }
+      #leftslide {
+        // inline-size: 350px;
         line-height: 1.5rem;
+        font-weight: bold;
+        animation: leftslide;
+        position: relative;
+        animation-duration: 3s;
+        @keyframes leftslide {
+          0% {
+            left: -700px;
+          }
+          100% {
+            left: 0px;
+          }
+        }
       }
+
       .form_container {
         background-color: $light-color;
         color: black;
+        text-align: center;
         border-radius: 5px;
         margin-top: 1rem;
         width: 350px;
         .sign_in {
-          padding: 0.5rem 0.8rem;
-          display: flex;
-          align-items: center;
+          padding: 0.5rem;
           #sign_in {
+            background-color: $light-color;
+            padding: 0.2rem;
+            font-weight: bold;
+            border-radius: 3px;
+            border: none;
+            font-size: 1.1rem;
+          }
+          #sign_in:hover {
+            background-color: $dark-blue-color;
           }
           #reg {
-            margin-left: 0.5rem;
+            background-color: $light-color;
+            border: none;
+            font-weight: bold;
+            border-radius: 3px;
+            padding: 0.2rem;
+            margin-left: 2rem;
+            font-size: 1.1rem;
+          }
+          #reg:hover {
+            background-color: $dark-blue-color;
           }
         }
-        form {
-          padding:0rem 1rem ;
-          input {
-            width: 70%;
-            padding:0.1rem 0rem;
-          }
-        }
+      }
+      .form-Content {
+        padding: 0.5rem;
       }
     }
   }
