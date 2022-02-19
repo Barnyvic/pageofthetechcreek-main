@@ -1,0 +1,23 @@
+.Learn-Main-Container {
+  .custom-shape-divider-bottom-1645258627 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1645258627 svg {
+    position: relative;
+    display: block;
+    width: calc(101% + 1.3px);
+    height: 280px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1645258627 .shape-fill {
+    fill: #4461DD;
+}
+}

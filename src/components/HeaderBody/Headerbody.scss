@@ -1,7 +1,7 @@
 @import "../styles/variable";
 
 .Headerbody_Conatiner {
-  height: 78vh;
+  height: 90vh;
   .custom-shape-divider-bottom-1645091675 {
     position: absolute;
     bottom: 0;
@@ -32,16 +32,34 @@
     width: 1200px;
     .HeaderBody_img {
       flex: 1;
-      width: 80%;
+      width: 90%;
       img {
-        margin-top: 1rem;
+        margin-left: 8rem;
         width: 70%;
-        position: relative;
-        border-radius: 6px;
+       border-radius: 100%;
         animation: movingImg;
         animation-duration: 8s;
-        // animation-iteration-count: infinite;
       }
+      .Navbar_location {
+      display: flex;
+      align-items: center;
+      .location {
+         width: 10%;
+        .location_img {
+          width: 20%;
+          background-color: $dark-blue-color;
+        }
+      }
+      .location_details {
+        text-align: center;
+        inline-size: 500px;
+        color:$light-color ;
+        p {
+          font-size: 0.8rem;
+          margin-top: 2rem;
+        }
+      }
+    }
       @keyframes movingImg {
         0% {
           opacity: 0;
@@ -57,7 +75,7 @@
       margin-left: 3rem;
       h1 {
         font-size: 3.5rem;
-        font-weight: 600;
+        font-weight: 400;
         position: relative;
         animation: heading;
         animation-duration: 3s;
@@ -71,9 +89,7 @@
         }
       }
       #leftslide {
-        // inline-size: 350px;
         line-height: 1.5rem;
-        font-weight: bold;
         animation: leftslide;
         position: relative;
         animation-duration: 3s;
@@ -92,14 +108,11 @@
         color: black;
         text-align: center;
         border-radius: 5px;
-        margin-top: 1rem;
         width: 350px;
         .sign_in {
-          padding: 0.5rem;
           #sign_in {
             background-color: $light-color;
             padding: 0.2rem;
-            font-weight: bold;
             border-radius: 3px;
             border: none;
             font-size: 1.1rem;
@@ -110,7 +123,6 @@
           #reg {
             background-color: $light-color;
             border: none;
-            font-weight: bold;
             border-radius: 3px;
             padding: 0.2rem;
             margin-left: 2rem;

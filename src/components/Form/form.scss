@@ -1,0 +1,58 @@
+.paymentnotification {
+  padding: 1rem;
+  .firstparag {
+    text-align: center;
+  }
+  .payment-details {
+    text-align: center;
+    p {
+      span {
+        color: red;
+      }
+    }
+  }
+  .personnalInfo {
+    .Personnal-info-details {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.7rem;
+      width: 100%;
+    }
+    .stateandlocal {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin-top: 0.5rem;
+      width: 100%;
+    }
+    .Contact-container {
+      h5 {
+        margin-top: 0.5rem;
+      }
+      .EmailandContact {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin-top: 0.5rem;
+        width: 100%;
+      }
+      textarea {
+        margin-top: 0.5rem;
+        width: 100%;
+      }
+    }
+    .btndiv {
+      text-align: center;
+      margin: 4rem;
+      button {
+        border: none;
+        outline: none;
+        padding: 1rem;
+        border-radius: 4px;
+        color: #ffffff;
+        background-color: #f44343;
+      }
+    }
+  }
+}
+ 

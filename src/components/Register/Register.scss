@@ -11,6 +11,7 @@
     }
     input:focus {
       border: 1px solid black;
+      outline: none;
     }
     select {
       width: 90%;
@@ -19,11 +20,15 @@
       border: 1px solid $dark-blue-color;
       border-radius: 4px;
     }
+    select:focus {
+      border: 1px solid black;
+      outline: none;
+    }
   }
   .terms {
     margin-top: 0.5rem;
     .condition {
-      margin-left: 7rem;
+       margin-left: 30%;
       color: black;
     }
   }

@@ -2,6 +2,7 @@ import { useState } from "react";
 import Signin from "../Sign-in/Siginin";
 import Register from "../Register/Register";
 import Woman2 from "../assets/bg-hero.png";
+import location from "../assets/location.svg";
 
 const HeaderBody = () => {
   const [form, setForm] = useState(true);
@@ -48,6 +49,22 @@ const HeaderBody = () => {
         </div>
         <div className="HeaderBody_img">
           <img src={Woman2} alt=" A girl with a laptop" />
+          <div className="Navbar_location">
+            <div className="location">
+              {/* <img
+                src={location}
+                alt="location-icon"
+                className="location_img"
+              /> */}
+            </div>
+            <div className="location_details">
+              <p>
+                Rivers State ICT Center. Opp. Pleasure Park Aba Road, Port
+                Harcourt. Rivers State, Nigeria. talk@techcreek.ng O9030003185,
+                09030003180
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
