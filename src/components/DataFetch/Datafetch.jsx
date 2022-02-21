@@ -1,6 +1,5 @@
-const Datafetch = ({ blogs, loading, err, title }) => {
+const Datafetch = ({ blogs, loading, title }) => {
   if (loading) return <h1>Loading...</h1>;
-  if (err) console.log(err);
 
   return (
     <div className="DataContainer">
@@ -10,7 +9,7 @@ const Datafetch = ({ blogs, loading, err, title }) => {
           return (
             <div className="Content" key={blog.id}>
               <h5>{blog.title}</h5>
-              <p>{blog.body}</p>
+              <p>{blog.year}</p>
             </div>
           );
         })}

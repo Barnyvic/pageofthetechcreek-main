@@ -4,13 +4,10 @@ import Form from "../Form/form";
 
 const Modalpage = ({ handleModal, show }) => {
   return (
-    <Modal show={show} onHide={handleModal}>
-      <Modal.Header closeButton>
-        <div className="Form-header">
-          <h5>ICT & Digital Literacy Training</h5>
-        </div>
+    <Modal show={show} size="lg" onHide={handleModal}>
+      <Modal.Header className="heading">
+        <Form />
       </Modal.Header>
-      <Form />
     </Modal>
   );
 };

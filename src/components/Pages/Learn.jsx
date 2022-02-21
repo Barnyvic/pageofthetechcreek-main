@@ -9,9 +9,12 @@ const Learn = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("https://jsonplaceholder.typicode.com/posts")
+      .get(
+        "https://api.themoviedb.org/3/movie/popular?api_key=c4084f4ff50cb99442df8d12e1551bdc&language=en-US&page=1"
+      )
       .then((res) => {
-        setBlog(res.data);
+         setBlog(res.data.results);
+        console.log(res.data.results);
       })
       .catch((err) => {
         setErr(err);
@@ -20,6 +23,7 @@ const Learn = () => {
         setLoading(false);
       });
   }, []);
+
 
   return (
     <div className="Learn-Main-Container">
